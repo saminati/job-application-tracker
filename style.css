@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f4f6f8;
+  color: #222;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.form-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  display: grid;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+button {
+  padding: 12px;
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #005fa3;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.job-card {
+  background: white;
+  padding: 18px;
+  margin-bottom: 15px;
+  border-left: 6px solid #0077cc;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+.job-card h3 {
+  margin: 0 0 8px;
+}
+
+.job-card p {
+  margin: 5px 0;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.Applied {
+  color: #0077cc;
+}
+
+.Interview {
+  color: #ff9800;
+}
+
+.Offer {
+  color: green;
+}
+
+.Rejected {
+  color: red;
+}
+
+.actions {
+  margin-top: 12px;
+}
+
+.actions button {
+  margin-right: 8px;
+  padding: 8px 12px;
+}
+
+.delete-btn {
+  background: #dc3545;
+}
+
+.delete-btn:hover {
+  background: #b02a37;
+}
+
+.edit-btn {
+  background: #28a745;
+}
+
+.edit-btn:hover {
+  background: #1f7e34;
+}
+
+.empty {
+  text-align: center;
+  color: #777;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .controls {
+    flex-direction: column;
+  }
+}
